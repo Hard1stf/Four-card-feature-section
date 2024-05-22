@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-colgroup {
-    color: hsl(0, 78%, 62%);
-    color: hsl(180, 62%, 55%);
-    color: hslhsl(34, 97%, 64%);
-    color: hsl(212, 86%, 64%);
-
-
-    color: hsl(234, 12%, 34%);
-    color: hsl(229, 6%, 66%);
-    color: hsl(0, 0%, 98%);
-}
-
 body {
     font-family: "Poppins", sans-serif;
     background-color: hsl(0, 0%, 98%);
@@ -40,7 +28,7 @@ main {
 }
 
 .head-container {
-    margin-bottom: 50px;
+    margin-block: 50px;
 }
 
 .head-container .light {
@@ -52,7 +40,7 @@ main {
 }
 
 .text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: hsl(234, 12%, 34%);
 }
 
