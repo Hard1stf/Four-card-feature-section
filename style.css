@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+colgroup {
+    color: hsl(0, 78%, 62%);
+    color: hsl(180, 62%, 55%);
+    color: hslhsl(34, 97%, 64%);
+    color: hsl(212, 86%, 64%);
+
+
+    color: hsl(234, 12%, 34%);
+    color: hsl(229, 6%, 66%);
+    color: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'supervisor'
+    'team-builder'
+    'karma'
+    'calculator'
+    ;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 30px;
+    text-align: center;
+}
+
+.head-container {
+    margin-bottom: 50px;
+}
+
+.head-container .light {
+    font-weight: 200;
+}
+
+.head-container .dark {
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.7rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.head-container .description {
+    text-align: justify;
+    font-size: 15px;
+    padding-inline: 5px;
+    margin-top: 30px;
+    color: hsl(229, 6%, 66%);
+}
+
+.supervisor {
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid hsl(180, 62%, 55%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 20px 0px #00000038;
+    grid-area: supervisor;
+}
+
+.h2-color {
+    color: hsl(234, 12%, 34%);
+}
+
+.p-color {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.icon {
+    float: right;
+}
+
+.team-builder {
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid hsl(0, 78%, 62%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 20px 0px #00000038;
+    grid-area: team-builder;
+}
+
+.karma{
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid hsl(34, 97%, 64%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 20px 0px #00000038;
+    grid-area: karma;
+}
+
+.calculator{
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid hsl(212, 86%, 64%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 20px 0px #00000038;
+    grid-area: calculator;
+}
+
+/* Tablet screen size .............. */
+
+@media (min-width:760px) {
+    main{
+        grid-template-areas: 
+        'supervisor supervisor'
+        'team-builder karma'
+        'calculator calculator'
+        ;
+    }
+    
+    .text {
+        font-size: 3.1rem;
+        color: hsl(234, 12%, 34%);
+    }
+    
+    .head-container .description {
+        text-align: center;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        grid-template-areas: 
+        'supervisor team-builder calculator'
+        'supervisor karma calculator'
+        ;
+    }
+    .head-container{
+        margin-bottom: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-container .description{
+        width: 550px;
+    }
+
+    .con{
+        max-width: 350px;
+    }
+
+    .supervisor{
+        margin: auto;
+    }
+    
+    .team-builder{
+        margin: auto;
+    }
+
+    .karma{
+        margin: auto;
+    }
+    
+    .calculator{
+        margin: auto auto auto 0px;
+    }
+
+    .text {
+        font-size: 2.3rem;
+    }
+
+    .con:hover{
+        transform: scale(1.1);
+        transition: transform 350ms;
+    }
+}
