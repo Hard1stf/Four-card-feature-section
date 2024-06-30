@@ -156,6 +156,8 @@ main {
 
     .con{
         max-width: 350px;
+        transform: scale(1);
+        transition: transform 350ms ease-in-out;
     }
 
     .supervisor{
@@ -180,6 +182,5 @@ main {
 
     .con:hover{
         transform: scale(1.1);
-        transition: transform 350ms;
     }
 }
